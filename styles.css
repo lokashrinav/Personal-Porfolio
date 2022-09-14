@@ -1,0 +1,81 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.header{
+    max-width: 1600px;
+    min-height: 475px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    transform: rotate3d(2, -4, 1, -45deg);
+    transition: all 2s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    perspective: 1000px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.back{
+    transform: rotateY( 180deg );
+    display: flex;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    color: lightseagreen;
+    font-family: 'Libre Baskerville', serif;
+    justify-self: center;   
+    align-items: center; 
+    width: 50%;
+}
+
+.centering{
+    align-self: center;
+}
+
+
+.back, .about{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    backface-visibility: hidden;
+    transition-delay: 0.25s;
+}
+
+.header:hover, .header:focus, .header:active{
+    transform: rotateY(180deg);
+    transition-delay: 0.5s;
+
+}
+
+.about{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: lightseagreen;
+    font-family: 'Libre Baskerville', serif;
+    min-height: 400px;
+    justify-items: center;
+    
+}
+
+.size{
+    object-fit: contain;
+    min-height: 100px;
+    max-height: 350px;
+    min-width: 400px;
+}
+
+.fot{
+    font-size: 20px;
+    min-height: 400px;
+}
