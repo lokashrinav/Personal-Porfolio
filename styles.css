@@ -1,26 +1,28 @@
 body, html{
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .container{
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: lightblue;
 }
 
 .header{
     max-width: 1600px;
-    min-height: 475px;
+    min-height: 500px;
     background-color: blue;
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    transform: rotate3d(2, -4, 1, -45deg);
+    transform: rotate3d(-2, 6, -1, 45deg);
     transition: all 2s ease;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
     perspective: 1000px;
     transition: 0.6s;
+    perspective: 10em;
     transform-style: preserve-3d;
 }
 
@@ -30,11 +32,11 @@ body, html{
     background-color: blue;
     text-align: center;
     font-size: 30px;
-    color: lightseagreen;
+    color: lightcoral;
     font-family: 'Libre Baskerville', serif;
     justify-self: center;   
     align-items: center; 
-    width: 50%;
+    min-width: 300px;
 }
 
 .centering{
@@ -43,25 +45,25 @@ body, html{
 
 
 .back, .about{
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+
     position: absolute;
     height: 100%;
     backface-visibility: hidden;
     transition-delay: 0.25s;
 }
 
-.header:hover, .header:focus, .header:active{
+.header:active, .header:hover, .header:focus{
     transform: rotateY(180deg);
     transition-delay: 0.5s;
 
 }
 
+
 .about{
     width: 100%;
     text-align: center;
     font-size: 40px;
-    color: lightseagreen;
+    color: lightcoral;
     font-family: 'Libre Baskerville', serif;
     min-height: 400px;
     justify-items: center;
@@ -79,3 +81,575 @@ body, html{
     font-size: 20px;
     min-height: 400px;
 }
+
+.red{
+    position: absolute;
+    left: 700px;
+    bottom: 50px;
+}
+    
+.blue{
+    position: absolute;
+    right: 700px;
+    bottom: 50px;
+}
+
+.mywork{
+    height: 200px;
+}
+
+.middle{
+    min-height: 330px;
+    min-width: 300px;
+    width: 1000px;
+    justify-self: center;
+    background-color: lightcoral;
+    border: 2px solid lightblue;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    z-index: 2;
+}
+
+.mywork1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: blue;
+    text-align: center;
+}
+
+.line{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index:0
+}
+
+.line1{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 2%;
+}
+
+.line2{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 4%;
+}
+
+.line3{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 6%;
+}
+
+.line4{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 8%;
+}
+
+.line5{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 10%;
+}
+
+.line6{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 12%;
+}
+
+.line7{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 14%;
+}
+
+.line8{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 16%;
+}
+
+.line9{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 18%;
+}
+
+.line10{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 20%;
+}
+
+.line11{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 22%;
+}
+
+.line12{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 24%;
+}
+
+.line13{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 26%;
+}
+
+.line14{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 28%;
+}
+
+.line15{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 30%;
+}
+
+.line16{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 32%;
+}
+
+.line17{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 34%;
+}
+
+.line18{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 36%;
+}
+
+.line19{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 38%;
+}
+
+.line20{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 40%;
+}
+
+.line21{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 42%;
+}
+
+.line22{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 44%;
+}
+
+.line23{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 46%;
+}
+
+.line24{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 48%;
+}
+
+.line25{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+}
+
+.line26{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 52%; 
+}
+
+.line27{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 54%; 
+}
+
+.line28{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 56%; 
+}
+
+.line29{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 58%; 
+}
+
+.line30{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 60%; 
+}
+
+.line31{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 62%; 
+}
+
+.line32{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 64%; 
+}
+
+.line33{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 66%; 
+}
+
+.line34{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 68%; 
+}
+
+.line35{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 70%; 
+}
+
+.line36{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 72%; 
+}
+
+.line37{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 74%; 
+}
+
+.line38{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 76%; 
+}
+
+.line39{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 78%; 
+}
+
+.line40{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 80%; 
+}
+
+.line41{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 82%; 
+}
+
+.line42{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 84%; 
+}
+
+.line43{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 86%; 
+}
+
+.line44{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 88%; 
+}
+
+.line45{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 90%; 
+}
+
+.line46{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 92%; 
+}
+
+.line47{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 94%; 
+}
+
+
+.line48{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 96%; 
+}
+
+
+.line49{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 98%; 
+}
+
+.line50{
+    height: 1292px;
+    width: 1%;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 0;
+    left: 100%; 
+}
+
+
+.friday{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.project{
+    height: 250px;
+    min-width: 200px;
+    background-color: lightblue;
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+}
+
+.git{
+    background-color: black;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.image1-1{
+    object-fit: fill;
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+.super{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.click{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px white solid;
+}
+
+.project1{
+    border-radius: 30px;
+
+}
+
+
+
+
